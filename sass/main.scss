@@ -1,0 +1,31 @@
+@use './colors' as c;
+@use './components' as *;
+@use './mixins' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+//NAV
+
+.burger-btn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1em;
+    background: none;
+}
