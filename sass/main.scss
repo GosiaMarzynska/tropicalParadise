@@ -68,7 +68,50 @@ body {
 		&::before {
 			top: 27px;
 			width: 30%;
-            transition-delay: .2s;
+			transition-delay: 0.2s;
+		}
+	}
+}
+
+//HEADER
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em;
+	height: 75vh;
+	text-align: center;
+	color: c.$pure-white;
+	@include heroImages("../img/palm-small.jpg");
+	background-attachment: scroll;
+
+	&__heading {
+		font-family: 'Dancing Script', cursive;
+		font-size: 4.8rem;
+		font-weight: 300;
+	}
+
+	&__text {
+		font-size: 1.4rem;
+	}
+
+	&__btn {
+		margin-top: 2em;
+		padding: 0.8em 1.6em;
+		font-size: 1.4rem;
+		background: c.$pure-white;
+		border: none;
+		border-radius: 8px;
+		color: c.$dark;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		&::before {
+			background-color: c.$light-white;
 		}
 	}
 }
